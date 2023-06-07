@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  margin-top: 30px;
+  margin-top: 140px;
+  height: 610px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__image {
+  width: 579px;
+  max-height: 599px;
+  height: 598.02px;
+  max-width: 579px;
+}
+
+.banner__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+div h1 {
+  height: 112.96978759765625px;
+  max-width: 745.11px;
+  width: auto;
+  border-radius: null px;
+  margin-bottom: 10px;
+}
+
+div p {
+  margin-top: 10px;
+  height: 65px;
+  max-width: 725px;
+  width: auto;
+  border-radius: nullpx;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 34.09px;
+}

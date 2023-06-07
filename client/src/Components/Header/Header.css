@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  background-color: #36416a;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  height: 84px;
+  padding: 5px;
+  width: 100%;
+  z-index: 999;
+}
+
+.header__title {
+  position: fixed;
+  color: #fff;
+  left: 20px;
+  font-weight: 700;
+  line-height: 36.46px;
+  font-size: 28px;
+  top: 25px;
+  height: 84px;
+}
+
+.header__hyperlinks {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  color: white;
+  height: 84px;
+}
+
+.header__signin-button {
+  width: 135px;
+  height: 45px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 31px;
+  border: none;
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.header__signin-button:hover {
+  border: 1.5px solid #ffffff;
+  border-radius: 8px;
+}
+
+.header__button-spacing {
+  margin: 5px; /* Adjust the value to your desired spacing */
+}

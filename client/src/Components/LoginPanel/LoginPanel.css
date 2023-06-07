@@ -1,0 +1,56 @@
+.loginPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 559px;
+  width: 724px;
+  border: 2px solid black;
+  padding: 35px;
+  background-color: white;
+}
+
+.loginPanel-title {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 39.15px;
+  line-height: 50.97px;
+  color: black;
+  margin-right: 95px;
+}
+
+.loginPanel-form {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+.loginPanel-email,
+.loginPanel-password {
+  margin-top: 25px;
+  width: 442.27px;
+  border: none;
+  border-bottom: 0.98px solid #aaaaaa;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  font-size: 19.57px;
+  font-weight: 500;
+  line-height: 25.49px;
+}
+
+.loginPanel-button {
+  margin-top: 25px;
+  background-color: #36416a;
+  font-weight: 500;
+  font-size: 21.53px;
+  line-height: 28.03px;
+  border-radius: 27.31px;
+  color: white;
+  width: 146.8px;
+  height: 43.24px;
+}
+
+.loginPanel-button:hover {
+  transform: scale(1.1); /* Adjust the scale value as desired */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+  

@@ -1,0 +1,29 @@
+.application-detail{
+    background-color:#36416A;
+    color: white;
+    width: 491.3px;
+    height: 562px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 35px;
+    align-items: flex-start;
+
+}
+
+.application-detail__name{
+    font-weight: 500;
+    font-size: 47.51px;
+    line-height: 61.86px;
+    height: 81px;
+    margin-top: 0;
+}
+
+.application-detail__description{
+    font-weight: 400;
+    font-size: 36.51px;
+    line-height: 47.86px;
+    width: 247.61px;
+    height: 353px;
+    text-align: left;
+}

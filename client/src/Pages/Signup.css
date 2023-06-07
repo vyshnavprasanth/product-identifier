@@ -1,0 +1,10 @@
+.signup-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    /* background-color: rgba(54, 65, 106, 1); */
+    height: 100vh;
+
+}

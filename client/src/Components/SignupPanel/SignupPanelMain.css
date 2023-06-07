@@ -1,0 +1,62 @@
+.signupPanel-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 65px;
+  }
+  
+  .signupPanel-main-title {
+    font-weight: 700;
+    font-size: 39.15px;
+    line-height: 50.97px;
+    color: white;
+    margin-right: 95px;
+  }
+  
+  .signupPanel-main-form {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 33px;
+    width: 771px;
+    height: 514px;
+    border: 1px solid rgba(170,170,170,1);
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+  }
+  .signupPanel-main-email,
+  .signupPanel-main-password,
+  .signupPanel-main-mobile,
+  .signupPanel-main-name {
+    margin-top: 55px;
+    width: 670px;
+    border: none;
+    border-bottom: 0.98px solid #aaaaaa;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-size:20px;
+    font-weight: 500;
+    line-height: 25.49px;
+  }
+  
+  .signupPanel-main-button {
+    margin-top: 25px;
+    background-color: #36416a;
+    font-weight: 500;
+    font-size: 21.53px;
+    line-height: 28.03px;
+    border-radius: 27.31px;
+    width: 150px;
+    height: 44px;
+    align-self: flex-end;
+    margin-right: 55px;
+    color: rgba(255, 255, 255, 1);
+    
+  }
+  
+  .signupPanel-main-button:hover {
+    transform: scale(1.1); /* Adjust the scale value as desired */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 1);
+  }
