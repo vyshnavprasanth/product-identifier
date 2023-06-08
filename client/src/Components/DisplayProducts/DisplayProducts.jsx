@@ -11,7 +11,7 @@ function DisplayProducts() {
   const handleSignupPopup = () => {
     updateSignupPopup(!signupPopup);
   };
-  
+
   const handlePopupClick = (event) => {
     event.stopPropagation(); // Prevent event propagation when clicking on the popup component
   };
@@ -49,7 +49,7 @@ function DisplayProducts() {
             + Add product
             {signupPopup && (
               <div className="overlay" onClick={handlePopupClick}>
-                <Signup main={false}/>
+                <Signup main={false} />
               </div>
             )}
           </button>
@@ -84,6 +84,7 @@ function DisplayProducts() {
                 </div>
                 <p className="display-products__card-comment-text">Comment</p>
               </div>
+              <input type="text" placeholder="Add a comment" />
             </div>
             <div className="display-products__card-upvotes-and-comments">
               <div className="upvotes-counter">
