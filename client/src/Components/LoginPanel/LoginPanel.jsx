@@ -30,7 +30,7 @@ function LoginPanel(props) {
               : "loginPanel-email-container"
           }
         >
-          <img
+          <img className="email-icon"
             src={process.env.PUBLIC_URL + "assets/img/email-icon.png"}
             alt="error"
           />
@@ -46,11 +46,11 @@ function LoginPanel(props) {
         <div
           className={
             props.main
-              ? "loginPanel-main--container"
-              : "loginPanel-email-container"
+              ? "loginPanel-main-password--container"
+              : "loginPanel-password-container"
           }
         >
-          <img
+          <img className="password-icon"
             src={process.env.PUBLIC_URL + "assets/img/password-icon.png"}
             alt="error"
           />
@@ -64,18 +64,19 @@ function LoginPanel(props) {
           />
         </div>
         {props.main ? (
-          <span className="existing-login">
-            {" "}
-            Don't have an account?{" "}
-            <Link
+          <span className="new-user-container">
+            Don't have an account? 
+            <Link className="new-user-link"
               to="/signup"
               style={{
                 textDecoration: "underline",
                 color: "#36416A",
                 cursor: "pointer",
+                marginLeft:"10px"
               }}
             >
-              {" "}
+               <br className="mobile-line-break" />
+
               Sign up
             </Link>
           </span>

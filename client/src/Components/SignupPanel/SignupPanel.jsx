@@ -127,23 +127,23 @@ function SignupPanel(props) {
           />
         </div>
         {props.main ? (
-          <span className="existing-login">
-            {" "}
-            Already have an account?{" "}
-            <Link
+          <span className="existing-user">
+            Already have an account?
+            <Link className="new-user-link"
               to="/login"
               style={{
                 textDecoration: "underline",
                 color: "#36416A",
                 cursor: "pointer",
+                marginLeft:"10px"
               }}
             >
-              {" "}
+               <br className="mobile-line-break" />
               Log in
             </Link>
           </span>
         ) : (
-          <span className="existing-login">
+          <span className="existing-user">
             {" "}
             Already have an account?{" "}
             <button
@@ -152,11 +152,7 @@ function SignupPanel(props) {
                 textDecoration: "underline",
                 color: "#36416A",
                 cursor: "pointer",
-                border: "none",
-                background: "inherit",
-                fontWeight: "500",
-                fontSize: "20px",
-                lineHeight: "26px",
+                marginLeft:"10px"
               }}
             >
               Log in
@@ -168,7 +164,7 @@ function SignupPanel(props) {
             )}
           </span>
         )}
-
+        
         <button
           className={
             props.main ? "signupPanel-main-button" : "signupPanel-button"

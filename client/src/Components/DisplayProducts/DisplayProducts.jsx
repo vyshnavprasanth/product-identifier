@@ -1,7 +1,5 @@
 import React from "react";
 import "./DisplayProducts.css";
-
-import Signin from "../../Pages/LogIn";
 import Signup from "../../Pages/Signup";
 import { useContext, useState } from "react";
 import { signupContext } from "../../store/SignupContext";
@@ -54,6 +52,16 @@ function DisplayProducts() {
             )}
           </button>
         </div>
+        <h4 className="filter-conditions__mobile-view-title">Filters:</h4>
+        <div className="filter-conditions__mobile-view">
+          <button className="filter-condition">All</button>
+          <button className="filter-condition">Fintecch</button>
+          <button className="filter-condition">Edtech</button>
+          <button className="filter-condition">B2B</button>
+          <button className="filter-condition">Saas</button>
+          <button className="filter-condition">Agritech</button>
+          <button className="filter-condition">Medtecch</button>
+        </div>
         <div className="display-products__card-layout">
           <div className="display-products__card">
             <div className="display-products__card-image">
@@ -65,44 +73,61 @@ function DisplayProducts() {
               />
             </div>
             <div className="display-products__card-informations">
-              <p className="display-products__card-name">Crud Club</p>
-              <p className="display-products__card-description">
-                Product description
+              <p className="display-products__card__name">Crud Club</p>
+              <p className="display-products__card__description">
+                It is good for credit card payments, it is fast, secure
               </p>
-              <div className="category-and-comment-container">
-                <button className="display-products__card-categories">
+              <div className="display-products__card__comment__category">
+                <button className="display-products__card__categories">
                   Category
                 </button>
-                <button className="display-products__card-categories">
+                <button className="display-products__card__categories">
                   Category
                 </button>
-                <div className="display-products__card-comment-icon">
+                <button class="display-products__card__comment-button">
                   <img
                     src={process.env.PUBLIC_URL + "assets/img/comment.png"}
-                    alt="banner"
+                    alt="Button Image"
+                    style={{ marginTop: "1.5vh" }}
                   />
-                </div>
-                <p className="display-products__card-comment-text">Comment</p>
+                </button>
               </div>
-              <input type="text" placeholder="Add a comment" />
             </div>
-            <div className="display-products__card-upvotes-and-comments">
-              <div className="upvotes-counter">
-                <div className="upvotes-counter__icon">^</div>
-                <div className="upvotes-counter__int">22</div>
+            <div className="display-products__card-informations-secondary">
+              <div className="display-products__card-informations-upvotes">
+                <p className="upvotes__counter-icon">^</p>
+                <p className="upvotes__counter">22</p>
               </div>
-              <div className="comments-counter">
-                <div className="comments-counter__int">
-                  <p>10</p>
-                </div>
-                <div className="comments-counter__icon">
-                  <img
-                    src={
-                      process.env.PUBLIC_URL + "assets/img/comments-counter.png"
-                    }
-                    alt="error"
-                  />
-                </div>
+              <div
+                className="display-products__card-informations-comments"
+                style={{ marginTop: "2.5vh", marginRight: "0.1vh" }}
+              >
+                <p className="comments__counter">10</p>
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "assets/img/comments-counter.png"
+                  }
+                  alt="msg counter"
+                  style={{ marginLeft: "5px" }}
+                />
+              </div>
+            </div>
+            <div className="display-products__card__comments">
+              <input
+                className="my-comment"
+                type="text"
+                placeholder="Add a comment"
+              />
+              <img
+                src={process.env.PUBLIC_URL + "assets/img/send-comment.png"}
+                alt="Button Image"
+                className="send-button"
+                style={{ marginTop: "1.5vh" }}
+              />
+              <div className="all-comments">
+                <div className="bullet-points"></div>
+                <p className="comments-line">Lithium is found when thing are chanded and lot of other things happened/.</p>
+                
               </div>
             </div>
           </div>
@@ -117,46 +142,185 @@ function DisplayProducts() {
               />
             </div>
             <div className="display-products__card-informations">
-              <p className="display-products__card-name">Crud Club</p>
-              <p className="display-products__card-description">
-                Product description
+              <p className="display-products__card__name">Crud Club</p>
+              <p className="display-products__card__description">
+                It is good for credit card payments, it is fast, secure
               </p>
-              <div className="category-and-comment-container">
-                <button className="display-products__card-categories">
+              <div className="display-products__card__comment__category">
+                <button className="display-products__card__categories">
                   Category
                 </button>
-                <button className="display-products__card-categories">
+                <button className="display-products__card__categories">
                   Category
                 </button>
-                <div className="display-products__card-comment-icon">
+                <button class="display-products__card__comment-button">
                   <img
                     src={process.env.PUBLIC_URL + "assets/img/comment.png"}
-                    alt="banner"
+                    alt="Button Image"
+                    style={{ marginTop: "1.5vh" }}
                   />
-                </div>
-                <p className="display-products__card-comment-text">Comment</p>
+                </button>
               </div>
             </div>
-            <div className="display-products__card-upvotes-and-comments">
-              <div className="upvotes-counter">
-                <div className="upvotes-counter__icon">^</div>
-                <div className="upvotes-counter__int">22</div>
+            <div className="display-products__card-informations-secondary">
+              <div className="display-products__card-informations-upvotes">
+                <p className="upvotes__counter-icon">^</p>
+                <p className="upvotes__counter">22</p>
               </div>
-              <div className="comments-counter">
-                <div className="comments-counter__int">
-                  <p>10</p>
-                </div>
-                <div className="comments-counter__icon">
-                  <img
-                    src={
-                      process.env.PUBLIC_URL + "assets/img/comments-counter.png"
-                    }
-                    alt="error"
-                  />
-                </div>
+              <div
+                className="display-products__card-informations-comments"
+                style={{ marginTop: "2.5vh", marginRight: "0.1vh" }}
+              >
+                <p className="comments__counter">10</p>
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "assets/img/comments-counter.png"
+                  }
+                  alt="msg counter"
+                  style={{ marginLeft: "5px" }}
+                />
+              </div>
+            </div>
+            <div className="display-products__card__comments">
+              <input
+                className="my-comment"
+                type="text"
+                placeholder="Add a comment"
+              />
+              <img
+                src={process.env.PUBLIC_URL + "assets/img/send-comment.png"}
+                alt="Button Image"
+                className="send-button"
+                style={{ marginTop: "1.5vh" }}
+              />
+              <div className="all-comments">
+                <div className="bullet-points"></div>
+                <p className="comments-line">Lithium is found when thing are chanded and lot of other things happened/.</p>
+                
               </div>
             </div>
           </div>
+          <div className="display-products__card">
+            <div className="display-products__card-image">
+              <img
+                src={
+                  process.env.PUBLIC_URL + "assets/img/products/product_1.png"
+                }
+                alt="banner"
+              />
+            </div>
+            <div className="display-products__card-informations">
+              <p className="display-products__card__name">Crud Club</p>
+              <p className="display-products__card__description">
+                It is good for credit card payments, it is fast, secure
+              </p>
+              <div className="display-products__card__comment__category">
+                <button className="display-products__card__categories">
+                  Category
+                </button>
+                <button className="display-products__card__categories">
+                  Category
+                </button>
+                <button class="display-products__card__comment-button">
+                  <img
+                    src={process.env.PUBLIC_URL + "assets/img/comment.png"}
+                    alt="Button Image"
+                    style={{ marginTop: "1.5vh" }}
+                  />
+                </button>
+              </div>
+            </div>
+            <div className="display-products__card-informations-secondary">
+              <div className="display-products__card-informations-upvotes">
+                <p className="upvotes__counter-icon">^</p>
+                <p className="upvotes__counter">22</p>
+              </div>
+              <div
+                className="display-products__card-informations-comments"
+                style={{ marginTop: "2.5vh", marginRight: "0.1vh" }}
+              >
+                <p className="comments__counter">10</p>
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "assets/img/comments-counter.png"
+                  }
+                  alt="msg counter"
+                  style={{ marginLeft: "5px" }}
+                />
+              </div>
+            </div>
+            <div className="display-products__card__comments">
+              <input
+                className="my-comment"
+                type="text"
+                placeholder="Add a comment"
+              />
+              <img
+                src={process.env.PUBLIC_URL + "assets/img/send-comment.png"}
+                alt="Button Image"
+                className="send-button"
+                style={{ marginTop: "1.5vh" }}
+              />
+              <div className="all-comments">
+                <div className="bullet-points"></div>
+                <p className="comments-line">Lithium is found when thing are chanded and lot of other things happened/.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div className="display-products__card">
+            <div className="display-products__card-image">
+              <img
+                src={
+                  process.env.PUBLIC_URL + "assets/img/products/product_1.png"
+                }
+                alt="banner"
+              />
+            </div>
+            <div className="display-products__card-informations">
+              <p className="display-products__card__name">Crud Club</p>
+              <p className="display-products__card__description">
+                It is good for credit card payments, it is fast, secure
+              </p>
+              <div className="display-products__card__comment__category">
+                <button className="display-products__card__categories">
+                  Category
+                </button>
+                <button className="display-products__card__categories">
+                  Category
+                </button>
+                <button class="display-products__card__comment-button">
+                  <img
+                    src={process.env.PUBLIC_URL + "assets/img/comment.png"}
+                    alt="Button Image"
+                    style={{ marginTop: "1.5vh" }}
+                  />
+                </button>
+              </div>
+            </div>
+            <div className="display-products__card-informations-secondary">
+              <div className="display-products__card-informations-upvotes">
+                <p className="upvotes__counter-icon">^</p>
+                <p className="upvotes__counter">22</p>
+              </div>
+              <div
+                className="display-products__card-informations-comments"
+                style={{ marginTop: "2.5vh", marginRight: "0.1vh" }}
+              >
+                <p className="comments__counter">10</p>
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "assets/img/comments-counter.png"
+                  }
+                  alt="msg counter"
+                  style={{ marginLeft: "5px" }}
+                />
+              </div>
+            </div>
+          </div>
+
+    
+
         </div>
       </div>
     </div>

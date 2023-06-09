@@ -4,7 +4,18 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
-    /* background-color: rgba(54, 65, 106, 1); */
     height: 100vh;
+    overflow: hidden;
+    width: auto;
 
 }
+
+@media (max-width: 767px) {
+    .signup-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    
+  }
+  

@@ -54,3 +54,33 @@
 .header__button-spacing {
   margin: 5px; /* Adjust the value to your desired spacing */
 }
+
+/* ==================== mobile responsive ==================== */
+
+@media (max-width: 767px) {
+  
+  .header{
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    padding: 5px;
+  }
+  .header__title{
+    width: 113px;
+    height: 31px;
+    font-weight: 700;
+    font-size: 23.61px;
+    line-height: 30.74px;
+    top: 6px;
+  }
+
+  .header__signin-button{
+    width: 65px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 13.75px;
+    line-height: 17.2px;
+    padding: 5px;
+    margin-top: 1px;
+  }
+}
