@@ -59,3 +59,12 @@
 }
 
 
+.existing-user{
+  margin-top: 25px;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26.04px;
+  color: rgba(115, 115, 115, 1);
+  white-space: break-spaces;
+}

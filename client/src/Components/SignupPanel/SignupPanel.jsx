@@ -146,8 +146,8 @@ function SignupPanel(props) {
           <span className="existing-user">
             {" "}
             Already have an account?{" "}
-            <button
-              onClick={handleLoginPopup}
+            <Link className="new-user-link"
+              to="/login"
               style={{
                 textDecoration: "underline",
                 color: "#36416A",
@@ -155,8 +155,9 @@ function SignupPanel(props) {
                 marginLeft:"10px"
               }}
             >
+               <br className="mobile-line-break" />
               Log in
-            </button>
+            </Link>
             {loginPopup && (
               <div className="overlay" onClick={handlePopupClick}>
                 <LogIn main={false} />
