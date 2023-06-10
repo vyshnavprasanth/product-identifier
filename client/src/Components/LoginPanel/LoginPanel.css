@@ -54,3 +54,54 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+
+/* ==================== mobile responsive ==================== */
+@media (max-width: 767px) {
+.loginPanel{
+  width: 65vw;
+  height: 52vh;
+  border: none;
+  padding: 25px;
+  padding-top: 10px;
+  border-radius:10px ;
+}
+
+.loginPanel-title{
+  display: none;
+}
+
+.loginPanel-email,
+.loginPanel-password {
+  margin-top: 15px;
+  width: 40vw;
+  border: none;
+  border-bottom: 0.98px solid #aaaaaa;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  font-size: 16.57px;
+  font-weight: 400;
+  line-height: 20.49px;
+}
+.loginPanel-form{
+  padding: 10px;
+  padding-top: 60px;
+}
+
+.new-user-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.loginPanel-button {
+  margin-top: 25px;
+  background-color: #36416a;
+  font-weight: 500;
+  font-size: 21.53px;
+  line-height: 28.03px;
+  border-radius: 27.31px;
+  color: white;
+  width: 186.8px;
+  height: 40.24px;
+}
+}

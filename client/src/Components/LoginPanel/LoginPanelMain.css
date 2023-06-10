@@ -84,6 +84,10 @@
   font-weight: 500;
   line-height: 32.68px;
 }
+.new-user-link{
+  margin-left: 5px;
+}
+
 /* ==================== mobile responsive ==================== */
 
 @media (max-width: 767px) {
@@ -156,9 +160,11 @@
     font-size: 16px;
     line-height: 20.83px;
   }
-  .new-user-container {
+
+  .new-user-link {
     font-size: 16.49px;
     line-height: 21.47px;
     margin-bottom: 15px;
+    margin-left: 1px;
   }
 }

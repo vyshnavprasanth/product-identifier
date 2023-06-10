@@ -3,10 +3,12 @@ import "./SignupPanel.css";
 import "./SignupPanelMain.css";
 import { Link } from "react-router-dom";
 import { loginContext } from "../../store/LoginContext";
+import { signupContext } from "../../store/SignupContext";
 import LogIn from "../../Pages/LogIn";
 
 function SignupPanel(props) {
   const { loginPopup, updateLoginPopup } = useContext(loginContext);
+  const { signupPopup, updateSignupPopup } = useContext(signupContext);
   const handleLoginPopup = () => {
     updateLoginPopup(!loginPopup);
   };
@@ -129,35 +131,33 @@ function SignupPanel(props) {
         {props.main ? (
           <span className="existing-user">
             Already have an account?
-            <Link className="new-user-link"
+            <Link
+              className="new-user-link"
               to="/login"
               style={{
                 textDecoration: "underline",
                 color: "#36416A",
                 cursor: "pointer",
-                marginLeft:"10px"
               }}
             >
-               <br className="mobile-line-break" />
+              {/* <br className="mobile-line-break" /> */}
               Log in
             </Link>
           </span>
         ) : (
           <span className="existing-user">
-            {" "}
-            Already have an account?{" "}
-            <Link className="new-user-link"
-              to="/login"
+            Already have an account?
+            <button
+              onClick={handleLoginPopup}
+              className="login-popup"
               style={{
+                border: "none",
+                backgroundColor: "inherit",
                 textDecoration: "underline",
-                color: "#36416A",
-                cursor: "pointer",
-                marginLeft:"10px"
               }}
             >
-               <br className="mobile-line-break" />
               Log in
-            </Link>
+            </button>
             {loginPopup && (
               <div className="overlay" onClick={handlePopupClick}>
                 <LogIn main={false} />
@@ -165,7 +165,7 @@ function SignupPanel(props) {
             )}
           </span>
         )}
-        
+
         <button
           className={
             props.main ? "signupPanel-main-button" : "signupPanel-button"

@@ -71,16 +71,27 @@ function LoginPanel(props) {
               style={{
                 textDecoration: "underline",
                 color: "#36416A",
-                cursor: "pointer",
-                marginLeft:"10px"
+                cursor: "pointer"
               }}
             >
-               <br className="mobile-line-break" />
-
+               {/* <br className="mobile-line-break" /> */}
               Sign up
             </Link>
           </span>
-        ) : null}
+        ) : <span className="new-user-container">
+        Don't have an account? 
+        <Link className="new-user-link"
+          to="/signup"
+          style={{
+            textDecoration: "underline",
+            color: "#36416A",
+            cursor: "pointer",
+          }}
+        >
+           <br className="mobile-line-break" />
+          Sign up
+        </Link>
+      </span>}
         <button
           className={
             props.main ? "loginPanel-main-button" : "loginPanel-button"

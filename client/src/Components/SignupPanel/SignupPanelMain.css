@@ -69,13 +69,16 @@
   color: rgba(255, 255, 255, 1);
 }
 .existing-user {
+  margin-left: 0px;
   margin-top: 25px;
-  align-self: flex-start;
   font-weight: 500;
   font-size: 20px;
   line-height: 26.04px;
   color: rgba(115, 115, 115, 1);
   white-space: break-spaces;
+}
+.new-user-link{
+  margin-left: 5px;
 }
 
 .mobile-line-break {
@@ -87,6 +90,7 @@
 @media (max-width: 767px) {
   .signupPanel-main {
     margin-top: 0px;
+ 
   }
 
   .application-description {
@@ -138,5 +142,13 @@
     font-size: 16.49px;
     line-height: 21.47px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+  .new-user-link{
+    margin-left: 0px;
   }
 }
