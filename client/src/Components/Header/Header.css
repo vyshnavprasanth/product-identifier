@@ -5,21 +5,24 @@
   justify-content: space-between;
   top: 0px;
   height: 84px;
-  padding: 1vw;
+  padding: 5px;
   width: 100%;
   z-index: 999;
 }
 
 .header__title {
   position: fixed;
-  color: #fff;
-  left: 20px;
+  color: white;
+  left: 0;
   font-weight: 700;
   line-height: 36.46px;
   font-size: 28px;
-  top: 25px;
-  height: 84px;
+  top: 0px;
+  height: fit-content;
+  background-color:#36416a;
+  padding: 3vh;
 }
+
 
 .header__hyperlinks {
   display: flex;
@@ -43,7 +46,7 @@
   color: white;
   text-decoration: none;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .header__signin-button:hover {
@@ -63,24 +66,31 @@
     align-items: center;
     justify-content: center;
     height: 54px;
-    padding: 5px;
+    padding: 1vw;
   }
+
   .header__title{
-    width: 113px;
-    height: 31px;
+    height: auto;
+    width:auto;
+    color: white;
     font-weight: 700;
     font-size: 23.61px;
-    line-height: 30.74px;
-    top: 6px;
+    line-height: 24px;
+    padding: 5vw;
   }
 
   .header__signin-button{
-    width: 65px;
+    width: 75px;
     height: 19px;
     font-weight: 500;
     font-size: 13.75px;
     line-height: 17.2px;
     padding: 5px;
-    margin-top: 1px;
+    margin-top: 0vh;
+    
+  }
+  .header__signin-button:hover{
+    border-radius: 4.44px;
+    border: 0.94px solid #FFFFFF;
   }
 }

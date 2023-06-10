@@ -14,13 +14,15 @@
 }
 
 .banner__information {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 90vw;
 }
 div h1 {
-  height: 112.96978759765625px;
+  height: auto;
   max-width: 745.11px;
   width: auto;
   border-radius: null px;

@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__title">
-        <h2>Feedback</h2>
+        <p className="">Feedback</p>
       </div>
       <div className="header__hyperlinks">
         <span className="header__button-spacing"></span>
