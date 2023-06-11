@@ -136,6 +136,9 @@ function DisplayProducts() {
                         Comment
                       </p>
                     </div>
+                    <div className="diplay-product__card-edit" style={{ marginTop: "1vh", height: "22px" }}>
+                      <button className="card__info-edit">Edit</button>
+                    </div>
                   </div>
                 </div>
                 <div className="display-products__card-informations-secondary">
@@ -172,7 +175,7 @@ function DisplayProducts() {
                     src={process.env.PUBLIC_URL + "assets/img/send-comment.png"}
                     alt="Button Image"
                     className="send-button"
-                    style={{ marginTop: "1.5vh" }}
+                    style={{ marginTop: "1vh" }}
                   />
                   <div className="all-comments">
                     <div className="display-products__card__comments-each">
