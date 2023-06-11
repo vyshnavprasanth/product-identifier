@@ -15,14 +15,16 @@ function App() {
   const [signupPopup, setSignupPopup] = useState(false);
   const [addProductPopup, setAddProductPopup] = useState(false)
 
+
   // Define the update functions
   const updateLoginPopup = () => {
     setLoginPopup(!loginPopup);
   };
-  const updateSignupPopup = () => {
+  const updateSignupPopup = () => {console.log("in");
     setSignupPopup(!signupPopup);
   };
   const updateAddProductPopup = () =>{
+    console.log("status"+setAddProductPopup);
     setAddProductPopup(!addProductPopup)
   }
 
