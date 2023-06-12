@@ -1,11 +1,14 @@
 import React from "react";
 import "./ProductAdd.css";
 
-function AddProduct() {
+function AddProduct(props) {
+  console.log("hey"+props.edit);
   return (
     <div className="addProduct">
       <div className="addProduct-title">
-        <h3>Add your product</h3>
+        {
+          !props.edit?<h3>Add your product</h3>:<h3>Edit your product</h3>
+        }
       </div>
 
       <div className="addProduct-form">

@@ -3,13 +3,14 @@ import "./DisplayProducts.css";
 import Signup from "../../Pages/Signup";
 import { useContext, useState } from "react";
 import { signupContext } from "../../store/SignupContext";
-import {addProductContext} from "../../store/ProductContext"
-import AddProduct from "../ProductAdd/ProductAdd";
+import {addProductContext,editProductContext} from "../../store/ProductContext"
+import AddProduct from "../../Pages/AddProduct";
 
 function DisplayProducts() {
   const { signupPopup, updateSignupPopup } = useContext(signupContext);
   const [isCommentsVisible, updateIsCommentsVisible] = useState(false);
   const {addProductPopup, updateAddProductPopup } = useContext(addProductContext)
+  const {editProductPopup,updateEditProductPopup } = useContext(editProductContext)
 
   const buttonVisibility = () => {
     updateIsCommentsVisible(!isCommentsVisible);
@@ -24,7 +25,14 @@ function DisplayProducts() {
   };
 
   const handleAddProduct=()=>{
+    console.log("add");
     updateAddProductPopup(!addProductPopup)
+  }
+
+  const handleEditProduct=()=>{
+    console.log("inside edit"+editProductPopup);
+    updateEditProductPopup(!editProductPopup)
+    console.log(editProductPopup);
   }
 
   const inLineStyles = {
@@ -63,7 +71,7 @@ function DisplayProducts() {
             + Add product
              {addProductPopup && (
               <div className="overlay" onClick={handlePopupClick}>
-                <AddProduct />
+                <AddProduct edit={false} />
               </div>
             )}
             {/* {signupPopup && (
@@ -137,7 +145,12 @@ function DisplayProducts() {
                       </p>
                     </div>
                     <div className="diplay-product__card-edit" style={{ marginTop: "1vh", height: "22px" }}>
-                      <button className="card__info-edit">Edit</button>
+                      <button onClick={handleEditProduct} className="card__info-edit">Edit
+                      {editProductPopup && (
+              <div className="overlay" onClick={handlePopupClick}>
+               <AddProduct edit={true} />
+              </div>
+            )}</button>
                     </div>
                   </div>
                 </div>

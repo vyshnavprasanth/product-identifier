@@ -35,18 +35,20 @@
 }
 
 .header__signin-button {
-  width: 135px;
-  height: 45px;
+  width: 125px;
+  height: 40px;
   font-weight: 500;
   font-style: normal;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 31px;
   border: none;
   background-color: inherit;
   color: white;
   text-decoration: none;
   text-align: center;
-  padding: 5px;
+  padding-top: 5px 5px 15px 5px;
+  margin-top: 1.6vh;
+
 }
 
 .header__signin-button:hover {
