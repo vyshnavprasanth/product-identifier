@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -38,16 +37,4 @@
       "last 1 safari version"
     ]
   }
-=======
-  "name": "product-finder",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
->>>>>>> e8c8f4eb7307b339e07b17a1ab60a5959168d90f
 }

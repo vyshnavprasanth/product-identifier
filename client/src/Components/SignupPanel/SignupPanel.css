@@ -1,0 +1,149 @@
+.signupPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 559px;
+  width: 724px;
+  border: none;
+  padding: 35px;
+  background-color: white;
+  border-radius: 0px;
+
+}
+
+.signupPanel-title {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 39.15px;
+  line-height: 50.97px;
+  color: black;
+  margin-right: 95px;
+}
+
+.signupPanel-form {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+.signupPanel-email,
+.signupPanel-password,
+.signupPanel-mobile,
+.signupPanel-name {
+  margin-top: 25px;
+  width: 442.27px;
+  border: none;
+  border-bottom: 0.98px solid #aaaaaa;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  font-size: 19.57px;
+  font-weight: 500;
+  line-height: 25.49px;
+}
+
+.signupPanel-button {
+  margin-top: 25px;
+  background-color: #36416a;
+  font-weight: 500;
+  font-size: 21.53px;
+  line-height: 28.03px;
+  border-radius: 27.31px;
+  color: white;
+  width: 146.8px;
+  height: 43.24px;
+  
+  
+}
+
+.signupPanel-button:hover {
+  transform: scale(1.1); /* Adjust the scale value as desired */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.existing-user{
+  margin-top: 25px;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26.04px;
+  color: rgba(115, 115, 115, 1);
+  white-space: break-spaces;
+}
+
+.login-popup{
+  font-family: DM Sans;
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+margin-left: 0.5vw;
+
+  color: #36416a;
+}
+/* ==================== mobile responsive ==================== */
+
+@media (max-width: 767px) {
+
+  .signupPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 53vh;
+    width: 57vw;
+    border: none;
+    padding: 29px;
+    border-radius: 10px;
+  }
+
+  .signupPanel-form {
+    margin-top: 1px;
+    width: 2vw;
+    height: 2vh;
+    padding: 1px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .signupPanel-email,
+  .signupPanel-password,
+  .signupPanel-mobile,
+  .signupPanel-name {
+    width: 23vh;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.49px;
+    margin-top: 2vh;
+    padding: 0.1vw;
+  }
+  .mobile-line-break {
+    display: block;
+  }
+  .signupPanel-title {
+    display: none;
+  }
+  .signupPanel-button {
+    width: 186.17px;
+    height: 31px;
+    align-self: normal;
+    margin-left: 5px;
+    margin-top: 1vh;
+  }
+  .existing-user{
+    margin-top: 2vh;
+    font-size: 16.49px;
+    line-height: 21.47px;
+    margin-bottom: 6vh;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .login-popup{
+    font-size: 13.85px;
+    line-height: 18.03px;
+  }
+}
