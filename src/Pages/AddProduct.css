@@ -1,8 +1,0 @@
-.add-product-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    height: 100vh;
-}
